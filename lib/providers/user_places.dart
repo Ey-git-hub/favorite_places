@@ -9,4 +9,5 @@ void addPlace(String title){
   state=[newPlace,...state];
 }
 }
-final userPlaceProvider=StateNotifierProvider((ref)=>UserPlaceNotifier());
+final userPlaceProvider=StateNotifierProvider<UserPlaceNotifier,List<Places>>((ref)=>UserPlaceNotifier());
+ 
