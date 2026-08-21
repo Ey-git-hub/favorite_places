@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:favorite_places/providers/user_places.dart';
 import 'package:favorite_places/widget/image_input.dart';
+import 'package:favorite_places/widget/location_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -51,6 +52,8 @@ void _savePlace(){
           ImageInput(onPickImage: (File image) {
             _selectedImage = image;
           },),
+          SizedBox(height: 16),
+          LocationInput(),
           SizedBox(height: 16),
           ElevatedButton.icon(onPressed: _savePlace, 
           icon:Icon(Icons.add), 
