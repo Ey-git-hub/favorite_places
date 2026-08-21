@@ -1,4 +1,5 @@
 import 'package:favorite_places/providers/user_places.dart';
+import 'package:favorite_places/widget/image_input.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -43,6 +44,9 @@ void _savePlace(){
             controller:_titleController ,
             style: TextStyle(color:Theme.of(context).colorScheme.onSurface,
           )),
+          //Image input
+          SizedBox(height: 16),
+          ImageInput(),
           SizedBox(height: 16),
           ElevatedButton.icon(onPressed: _savePlace, 
           icon:Icon(Icons.add), 
