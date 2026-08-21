@@ -41,7 +41,7 @@ void _savePlace(){
             decoration: InputDecoration(labelText: "Title",
             ),
             controller:_titleController ,
-            style: TextStyle(color:Theme.of(context).colorScheme.onBackground,
+            style: TextStyle(color:Theme.of(context).colorScheme.onSurface,
           )),
           SizedBox(height: 16),
           ElevatedButton.icon(onPressed: _savePlace, 
