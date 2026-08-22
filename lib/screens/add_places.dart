@@ -49,7 +49,7 @@ void _savePlace(){
           )),
           //Image input
           SizedBox(height: 16),
-          ImageInput(onPickImage: (File image) {
+          ImageInput(onPickImage: (image) {
             _selectedImage = image;
           },),
           SizedBox(height: 16),
